@@ -127,8 +127,7 @@
                   >复制</el-button>
                 </el-input>
               </el-form-item>
-	      <!--
-              <el-form-item label="订阅短链:">
+              <!-- <el-form-item label="订阅短链:">
                 <el-input class="copy-content" disabled v-model="curtomShortSubUrl">
                   <el-button
                     slot="append"
@@ -256,7 +255,7 @@ export default {
           "自动判断客户端": "auto",
         },
         customBackend: {
-	  "sub.xjz.im「920.im小站提供」": "https://sub.xjz.im/sub?",
+          "sub.xjz.im「920.im小站提供」": "https://sub.xjz.im/sub?",
           "localhost:25500 本地版": "http://localhost:25500/sub?",
           "sub-beta.vercel.app(zhongfly作者提供)": "https://sub-beta.vercel.app/sub?",
           "subcon.dlj.tf(subconverter作者提供)": "https://subcon.dlj.tf/sub?",
@@ -265,7 +264,7 @@ export default {
           "sub.id9.cc(品云转换)": "https://sub.id9.cc/sub?",
         },
         backendOptions: [
-	  { value: "https://sub.xjz.im/sub?" },
+          { value: "https://sub.xjz.im/sub?" },
           { value: "http://localhost:25500/sub?" },
           { value: "https://sub-beta.now.sh/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
