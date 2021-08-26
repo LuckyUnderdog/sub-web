@@ -127,6 +127,7 @@
                   >复制</el-button>
                 </el-input>
               </el-form-item>
+	      <!--
               <el-form-item label="订阅短链:">
                 <el-input class="copy-content" disabled v-model="curtomShortSubUrl">
                   <el-button
@@ -137,7 +138,7 @@
                     icon="el-icon-document-copy"
                   >复制</el-button>
                 </el-input>
-              </el-form-item>
+              </el-form-item> -->
 
               <el-form-item label-width="0px" style="margin-top: 40px; text-align: center">
                 <el-button
@@ -146,24 +147,24 @@
                   @click="makeUrl"
                   :disabled="form.sourceSubUrl.length === 0"
                 >生成订阅链接</el-button>
-                <el-button
+                <!-- <el-button
                   style="width: 120px"
                   type="danger"
                   @click="makeShortUrl"
                   :loading="loading"
                   :disabled="customSubUrl.length === 0"
-                >生成短链接</el-button>
+                >生成短链接</el-button> -->
                 <!-- <el-button style="width: 120px" type="primary" @click="surgeInstall" icon="el-icon-connection">一键导入Surge</el-button> -->
               </el-form-item>
 
               <el-form-item label-width="0px" style="text-align: center">
-                <el-button
+                <!-- <el-button
                   style="width: 120px"
                   type="primary"
                   @click="dialogUploadConfigVisible = true"
                   icon="el-icon-upload"
                   :loading="loading"
-                >上传配置</el-button>
+                >上传配置</el-button> -->
                 <el-button
                   style="width: 120px"
                   type="primary"
@@ -255,15 +256,16 @@ export default {
           "自动判断客户端": "auto",
         },
         customBackend: {
+	  "sub.xjz.im「920.im小站提供」": "https://sub.xjz.im/sub?",
           "localhost:25500 本地版": "http://localhost:25500/sub?",
-          "sub-beta.vercel.app": "https://sub-beta.vercel.app/sub?",
-          "subcon.dlj.tf(subconverter作者提供-稳定)":
-            "https://subcon.dlj.tf/sub?",
-          "api.dler.io(sub作者&lhie1提供-稳定)": "https://api.dler.io/sub?",
-          "api.wcc.best(sub-web作者提供-稳定)": "https://api.wcc.best/sub?",
+          "sub-beta.vercel.app(zhongfly作者提供)": "https://sub-beta.vercel.app/sub?",
+          "subcon.dlj.tf(subconverter作者提供)": "https://subcon.dlj.tf/sub?",
+          "api.dler.io(sub作者&lhie1提供)": "https://api.dler.io/sub?",
+          "api.wcc.best(sub-web作者提供)": "https://api.wcc.best/sub?",
           "sub.id9.cc(品云转换)": "https://sub.id9.cc/sub?",
         },
         backendOptions: [
+	  { value: "https://sub.xjz.im/sub?" },
           { value: "http://localhost:25500/sub?" },
           { value: "https://sub-beta.now.sh/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
